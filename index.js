@@ -35,7 +35,7 @@ app.post('/send-email', (req, res) => {
     from: MyEmail,
     to,
     subject,
-    text,
+    html:text,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
